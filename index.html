@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=49c9fa2e-a9b5-45ad-ad74-fa17a20c3315" type="text/javascript"></script>
+    <script src="https://yandex.st/jquery/2.2.3/jquery.min.js" type="text/javascript"></script>
+    <script src="map.js" type="text/javascript"></script>
+
 </head>
 
 <body>
@@ -186,97 +190,9 @@
         </div>
         <div class="store">
             <div class="store__list">
-                <div class="store__item">
-                    <h5 class="store__item_title">Пункт выдачи</h5>
-                    <div class="store__item_time">
-                        <img src="assets/icons/clock.svg" alt="clock">
-                        <p>c 09:00 до 18:00</p>
-                    </div>
-                    <div class="store__item_image">
-                        <img src="assets/img/store1.jpg" alt="store">
-                    </div>
-                    <div class="store__item_mail">
-                        <img src="assets/icons/mail-mini.svg" alt="mail">
-                        <a href="mailto:zakaz@um-ural.ru">zakaz@um-ural.ru</a>
-                    </div>
-                    <div class="store__item_place">
-                        <img src="assets/icons/place.svg" alt="place">
-                        <p>г. Тюмень, ул. Тимуровцев, дом 1а, строение 8</p>
-                    </div>
-                    <div class="store__item_phone">
-                        <img src="assets/icons/phone-mini.svg" alt="phone">
-                        <a href="tel:+73452539860">+7 (3452) 53-98-60</a>
-                    </div>
-                </div>
-                <div class="store__item">
-                    <h5 class="store__item_title">Пункт выдачи</h5>
-                    <div class="store__item_time">
-                        <img src="assets/icons/clock.svg" alt="clock">
-                        <p>c 09:00 до 18:00</p>
-                    </div>
-                    <div class="store__item_image">
-                        <img src="assets/img/store1.jpg" alt="store">
-                    </div>
-                    <div class="store__item_mail">
-                        <img src="assets/icons/mail-mini.svg" alt="mail">
-                        <a href="mailto:zakaz@um-ural.ru">zakaz@um-ural.ru</a>
-                    </div>
-                    <div class="store__item_place">
-                        <img src="assets/icons/place.svg" alt="place">
-                        <p>г. Тюмень, ул. Тимуровцев, дом 1а, строение 8</p>
-                    </div>
-                    <div class="store__item_phone">
-                        <img src="assets/icons/phone-mini.svg" alt="phone">
-                        <a href="tel:+73452539860">+7 (3452) 53-98-60</a>
-                    </div>
-                </div>
-                <div class="store__item">
-                    <h5 class="store__item_title">Пункт выдачи</h5>
-                    <div class="store__item_time">
-                        <img src="assets/icons/clock.svg" alt="clock">
-                        <p>c 09:00 до 18:00</p>
-                    </div>
-                    <div class="store__item_image">
-                        <img src="assets/img/store1.jpg" alt="store">
-                    </div>
-                    <div class="store__item_mail">
-                        <img src="assets/icons/mail-mini.svg" alt="mail">
-                        <a href="mailto:zakaz@um-ural.ru">zakaz@um-ural.ru</a>
-                    </div>
-                    <div class="store__item_place">
-                        <img src="assets/icons/place.svg" alt="place">
-                        <p>г. Тюмень, ул. Тимуровцев, дом 1а, строение 8</p>
-                    </div>
-                    <div class="store__item_phone">
-                        <img src="assets/icons/phone-mini.svg" alt="phone">
-                        <a href="tel:+73452539860">+7 (3452) 53-98-60</a>
-                    </div>
-                </div>
-                <div class="store__item">
-                    <h5 class="store__item_title">Пункт выдачи</h5>
-                    <div class="store__item_time">
-                        <img src="assets/icons/clock.svg" alt="clock">
-                        <p>c 09:00 до 18:00</p>
-                    </div>
-                    <div class="store__item_image">
-                        <img src="assets/img/store1.jpg" alt="store">
-                    </div>
-                    <div class="store__item_mail">
-                        <img src="assets/icons/mail-mini.svg" alt="mail">
-                        <a href="mailto:zakaz@um-ural.ru">zakaz@um-ural.ru</a>
-                    </div>
-                    <div class="store__item_place">
-                        <img src="assets/icons/place.svg" alt="place">
-                        <p>г. Тюмень, ул. Тимуровцев, дом 1а, строение 8</p>
-                    </div>
-                    <div class="store__item_phone">
-                        <img src="assets/icons/phone-mini.svg" alt="phone">
-                        <a href="tel:+73452539860">+7 (3452) 53-98-60</a>
-                    </div>
-                </div>
+                
             </div>
-            <div class="store__map">
-
+            <div class="store__map" id="map">
             </div>
         </div>
     </div>
