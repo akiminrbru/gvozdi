@@ -527,6 +527,11 @@ body,
 .balloon-body ul li a {
     color: #111;
     text-decoration: none;
+    transition: 0.3s;
+}
+
+.balloon-body ul li a:hover {
+    color: #3b16a1;
 }
 
 .balloon-footer {
@@ -559,4 +564,31 @@ body,
 .balloon-img img {
     width: 100%;
     height: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    .store {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .store__list {
+        flex-direction: row;
+        overflow: auto;
+        gap: 20px;
+    }
+
+    .store__map {
+        padding: 0;
+        padding-top: 9px;
+    }
+
+    .ymaps-2-1-79-map {
+        width: 100% !important;
+        height: 700px !important;
+    }
+
+    .store__list::-webkit-scrollbar {
+        height: 6px;
+    }
 }

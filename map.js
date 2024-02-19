@@ -116,6 +116,15 @@ const getItem = async () => {
         marks?.forEach(element => {
             myMap.geoObjects.add(element)
         });
+
+        myMap.geoObjects.events.add('click', function (e) {
+            let geoObject = e.get('target');
+            let projection = myMap.options.get('projection');
+            let position = geoObject.geometry.getCoordinates();
+            let position_global_px = myMap.converter.pageToGlobal(projection.fromGlobalPixels(position, myMap.getZoom()));
+            let position_local_px = myMap.converter.globalToPage(projection.toGlobalPixels(position,myMap.getZoom()));
+            myMap.setGlobalPixelCenter([position_global_px[0] + position_local_px[0], position_global_px[1] + position_local_px[1]]);
+        }, this);
     }
 
 }
